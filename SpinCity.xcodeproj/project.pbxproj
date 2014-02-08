@@ -22,6 +22,10 @@
 		B3300E7418A27630005562FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3300E5318A27630005562FD /* UIKit.framework */; };
 		B3300E7C18A27630005562FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3300E7A18A27630005562FD /* InfoPlist.strings */; };
 		B3300E7E18A27630005562FD /* SpinCityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3300E7D18A27630005562FD /* SpinCityTests.m */; };
+		B3300E8918A280BA005562FD /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = B3300E8818A280BA005562FD /* Album.m */; };
+		B3300E8C18A2A1F6005562FD /* AlbumDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3300E8B18A2A1F6005562FD /* AlbumDataController.m */; };
+		B3300E8F18A3A43D005562FD /* AlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3300E8E18A3A43D005562FD /* AlbumTableViewCell.m */; };
+		B3300E9118A3F097005562FD /* AlbumArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3300E9018A3F097005562FD /* AlbumArray.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,13 @@
 		B3300E7918A27630005562FD /* SpinCityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpinCityTests-Info.plist"; sourceTree = "<group>"; };
 		B3300E7B18A27630005562FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3300E7D18A27630005562FD /* SpinCityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpinCityTests.m; sourceTree = "<group>"; };
+		B3300E8718A280BA005562FD /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		B3300E8818A280BA005562FD /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		B3300E8A18A2A1F6005562FD /* AlbumDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDataController.h; sourceTree = "<group>"; };
+		B3300E8B18A2A1F6005562FD /* AlbumDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDataController.m; sourceTree = "<group>"; };
+		B3300E8D18A3A43D005562FD /* AlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumTableViewCell.h; sourceTree = "<group>"; };
+		B3300E8E18A3A43D005562FD /* AlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumTableViewCell.m; sourceTree = "<group>"; };
+		B3300E9018A3F097005562FD /* AlbumArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AlbumArray.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +135,12 @@
 				B3300E6818A27630005562FD /* DetailViewController.m */,
 				B3300E6A18A27630005562FD /* Images.xcassets */,
 				B3300E5618A27630005562FD /* Supporting Files */,
+				B3300E8718A280BA005562FD /* Album.h */,
+				B3300E8818A280BA005562FD /* Album.m */,
+				B3300E8A18A2A1F6005562FD /* AlbumDataController.h */,
+				B3300E8B18A2A1F6005562FD /* AlbumDataController.m */,
+				B3300E8D18A3A43D005562FD /* AlbumTableViewCell.h */,
+				B3300E8E18A3A43D005562FD /* AlbumTableViewCell.m */,
 			);
 			path = SpinCity;
 			sourceTree = "<group>";
@@ -135,6 +152,7 @@
 				B3300E5818A27630005562FD /* InfoPlist.strings */,
 				B3300E5B18A27630005562FD /* main.m */,
 				B3300E5D18A27630005562FD /* SpinCity-Prefix.pch */,
+				B3300E9018A3F097005562FD /* AlbumArray.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -235,6 +253,7 @@
 			files = (
 				B3300E6B18A27630005562FD /* Images.xcassets in Resources */,
 				B3300E5A18A27630005562FD /* InfoPlist.strings in Resources */,
+				B3300E9118A3F097005562FD /* AlbumArray.plist in Resources */,
 				B3300E6318A27630005562FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,8 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3300E6018A27630005562FD /* AppDelegate.m in Sources */,
+				B3300E8C18A2A1F6005562FD /* AlbumDataController.m in Sources */,
 				B3300E6618A27630005562FD /* MasterViewController.m in Sources */,
 				B3300E5C18A27630005562FD /* main.m in Sources */,
+				B3300E8F18A3A43D005562FD /* AlbumTableViewCell.m in Sources */,
+				B3300E8918A280BA005562FD /* Album.m in Sources */,
 				B3300E6918A27630005562FD /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
